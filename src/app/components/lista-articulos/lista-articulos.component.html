@@ -1,0 +1,12 @@
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Lista de artículos</a>
+  </li>
+      @for(articulo of articulos | async; track articulo.nombre) {
+      <li class="nav-item"><a class="nav-link" [routerLink]="['/vista-articulo', articulo.id]">{{ articulo.nombre }}</a></li>
+    }
+</ul>
+
+
+
+

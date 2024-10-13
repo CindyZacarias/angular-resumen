@@ -1,0 +1,22 @@
+{
+  "articulos": [
+    {
+      "id": 1,
+      "nombre": "Artículo 1",
+      "descripcion": "Descripción del primer Artículo",
+      "imagen": "img/imagenArticulo.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Artículo 2",
+      "descripcion": "Descripción del segundo Artículo",
+      "imagen": "img/imagenArticulo.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Artículo 3",
+      "descripcion": "Descripción del tercer Artículo",
+      "imagen": "img/imagenArticulo.jpg"
+    }
+  ]
+}

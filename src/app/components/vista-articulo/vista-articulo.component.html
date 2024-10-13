@@ -1,0 +1,22 @@
+  <div class="row">
+    @for(articulo of articulos| async; track articulo.nombre) {
+    <div class="card p-2 m-2" style="width: 18rem">
+      <img [src]="articulo.imagen" class="card-img-top" [alt]="articulo.nombre" />
+      <div class="card-body">
+        <h5 class="card-title">{{ articulo.nombre }}</h5>
+        <p class="card-text">{{ articulo.descripcion }}</p>
+      </div>
+    </div>
+    }
+  </div>
+
+<div *ngIf="articulo; else noEncontrado">
+  <h2>{{ articulo.nombre }}</h2>
+  <p>{{ articulo.descripcion }}</p>
+  <!-- Otros detalles del artículo -->
+</div>
+
+<ng-template #noEncontrado>
+  <p>Artículo no encontrado.</p>
+</ng-template>
+
